@@ -49,14 +49,14 @@ function App() {
     <>
 
 <BrowserRouter>
-<Navbar title ="Words Counter" AboutText ="About us" toggleDarkMode ={toggleDarkMode} mode ={mode}/>
+<Navbar title ="LexiPulse Studio" AboutText ="About" toggleDarkMode ={toggleDarkMode} mode ={mode}/>
          <Alert alert ={alert}></Alert>
       <Routes>
        <Route index element={<div className="container my-3">
       <TextForm showAlert ={showAlert} heading ="Enter Your Text in this Box" mode={mode}/>
      </div>} />
         <Route path="/about" element={<div className="container border-spacing-2">
-      <About />
+      <About mode={mode} />
      </div>} />
       </Routes>
     </BrowserRouter>
